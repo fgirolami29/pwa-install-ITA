@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en" class="notranslate" translate="no">
+<html lang="en"  translate="yes">
 
 <head>
 	<meta charset="UTF-8">
@@ -23,6 +23,12 @@
 
 <body>
 	<script type="text/javascript">
+		// Ottieni la lingua preferita del browser dell'utente
+const userLanguage = navigator.language || navigator.userLanguage;
+
+// Stampa la lingua preferita nel console
+console.log('Lingua del browser:', userLanguage);
+
 		if ("serviceWorker" in navigator) {
 			if (navigator.serviceWorker.controller) {
 				console.log("Active service worker found, no need to register");
